@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Candidate</title>
+    
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url("{% static 'SA2.jpeg' %}");
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(27, 30, 226, 0.8); 
+            padding: 20px;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1,
+        header p {
+            margin: 0;
+        }
+
+        #bio {
+            background-color: rgba(39, 107, 235, 0.6); 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 100px;
+            color: #fff;
+        }
+
+        #bio h2 {
+            color: #fff;
+        }
+
+        #contact {
+            background-color: rgba(44, 82, 207, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        #contact h2 {
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(20, 56, 175, 0.8); /* Semi-transparent black background */
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VOTE FOR CHANGE</h1>
+        <p>The best days are still ahead!</p>
+    </header>
+
+    <section id="bio">
+        <h2>Short Bio</h2>
+        <p>
+            Our political party not only seeks to engage with young voters but also to actively involve them in political representation by appointing
+            young premier candidates and members of parliament. By joining us, young individuals have the opportunity to be at the forefront of shaping
+            policies that directly affect their lives and the future of our nation.
+        </p>
+        <p>
+            We, the young South Africans, are the future. Let's ensure we are represented now and shape the country for future generations. By joining
+            Our Political Party, young people can participate in decision-making processes, advocate for issues that matter to them, and contribute
+            to building a more inclusive and prosperous society for all.
+        </p>
+        <p>
+            Moreover, Our Political Party provides a platform for youth empowerment and leadership development. We offer mentorship programs, training
+            sessions, and networking opportunities to help young members develop their skills, expand their knowledge, and prepare for leadership roles
+            in politics and beyond. Together, we can harness the energy, creativity, and passion of the youth to drive positive change and build a
+            brighter future for our country.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p class="lead">For further communication, you can reach us at:</p>
+        <p>Phone: 011 777 9999</p>
+        <p>Email: info@ourpoliticalparty.com</p>
+        <p>Address: 123 Main Street, Cityville, Country</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MN. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS at the end of the body for faster page load -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-h1J4hoI9JfyoVaIY2qXUnzc7jc9X5mq0sYJAz4/XoW6vH4RDtOEW/CBIakto1uXl" crossorigin="anonymous"></script>
+</body>
+</html>
+

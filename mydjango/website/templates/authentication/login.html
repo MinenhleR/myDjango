@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!--Custom CSS -->
+    <style>
+       /* Custom styling */
+       .main-heading {
+            background-color: rgb(32, 33, 34);
+            padding: 30px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(197, 217, 233); 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .subtitle {
+            background-color: rgb(40, 41, 43);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 30px;
+            color: rgb(197, 225, 241); 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        /* Set background image */
+        body {
+            background-image: url("{% static 'img/SA2.jpeg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-attachment: fixed;
+            opacity: 0.9;
+        }
+
+        /* Center the form and add spacing */
+        .login-form {
+            margin-top: 50px;
+        }
+
+        /* Darker font color for labels */
+        .form-label {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col main-heading">
+                <h1>Login As User</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col subtitle">
+                <a href="{% url 'website:register' %}" class="btn btn-primary">Create User</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col subtitle">
+                <h1>Welcome</h1>
+            </div>
+        </div>
+
+        <div class="row login-form justify-content-center"> <!-- Center the form -->
+            <div class="col-md-6">
+                <form action="{% url 'website:authenticate_user' %}" method="post" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="User" required>
+                        <div class="invalid-feedback">Please enter your username.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <div class="invalid-feedback">Please enter your password.</div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
