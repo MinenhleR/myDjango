@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+env/
+
+# Compiled Python files
+*.pyc
+
+# Log files
+*.log
+
+# SQLite database file
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Media files
+media/
