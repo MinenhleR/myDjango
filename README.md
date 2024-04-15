@@ -54,7 +54,7 @@ This is a brief description of myDjango project.
 
 3. Access the application in your web browser:
 
-    Open [([http://localhost:8000/)](http://127.0.0.1:8000/) in your browser.
+    Open [([http://localhost:(http://127.0.0.1:8000/)/)](http://127.0.0.1:8000/) in your browser.
 
 ## Usage
 
