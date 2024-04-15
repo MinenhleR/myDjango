@@ -55,7 +55,7 @@ This is a brief description of myDjango project.
 
 3. Access the application in your web browser:
 
-    Open [http://localhost:8000/](http://localhost:8000/) in your browser.
+    Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
 
 ## Usage
 
@@ -92,4 +92,3 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
